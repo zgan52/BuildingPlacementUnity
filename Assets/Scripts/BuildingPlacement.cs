@@ -5,13 +5,15 @@ using UnityEngine;
 public class BuildingPlacement : MonoBehaviour {
     private PlaceableBuilding placeableBuilding;
     private Transform currentBuilding;
+
+
     private bool hasPlaced;
     public LayerMask buildingsMask;
     private PlaceableBuilding placeableBuildingOld;
     Color colr;
     // Use this for initialization
     void Start () {
-        
+     
 
     }
 
@@ -20,6 +22,7 @@ public class BuildingPlacement : MonoBehaviour {
         Vector3 m = Input.mousePosition;
         m = new Vector3(m.x, m.y, transform.position.y);
         Vector3 p = Camera.main.ScreenToWorldPoint(m);
+      
         if (currentBuilding != null && !hasPlaced)
         {
            //currentBuilding.position = new Vector3(p.x, 0, p.z);
