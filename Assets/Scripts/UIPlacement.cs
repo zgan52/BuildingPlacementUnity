@@ -13,12 +13,13 @@ using UnityEngine.EventSystems;
 
 public class UIPlacement : MonoBehaviour,
     IDragHandler
- {
+ 
+{
+
        public void OnDrag(PointerEventData eventData)
      
     {
-        print("aaaaa");
-       
+     ;
         if(Input.GetMouseButton(0))
         {
            
@@ -29,5 +30,5 @@ public class UIPlacement : MonoBehaviour,
         }
     }
 
-   
+ 
 }
